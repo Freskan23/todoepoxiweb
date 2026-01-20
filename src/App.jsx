@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
+import Provincia from './pages/Provincia';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/servicios" element={<Home />} />
             <Route path="/galeria" element={<Home />} />
             <Route path="/precios" element={<Home />} />
+            <Route path="/:slug" element={<Provincia />} />
           </Routes>
         </main>
         <Footer />
