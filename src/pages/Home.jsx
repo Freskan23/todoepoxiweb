@@ -39,15 +39,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
-        {/* Decorative Image/Graphic container */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl px-6 opacity-40 blur-sm pointer-events-none">
-          <img
-            src="/images/hero.png"
-            alt=""
-            className="w-full h-auto rounded-t-3xl shadow-2xl"
-          />
-        </div>
       </section>
 
       {/* Bento Grid Services Section */}
@@ -125,10 +116,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Values Section */}
-      <section className="bg-white py-32 border-t border-gray-100">
+      < section className="bg-white py-32 border-t border-gray-100" >
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
             <div className="space-y-6">
@@ -162,10 +153,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* CTA Section */}
-      <section className="bg-apple-bg py-32 px-6">
+      < section className="bg-apple-bg py-32 px-6" >
         <div className="max-w-4xl mx-auto rounded-[3rem] bg-white p-12 md:p-24 text-center shadow-sm border border-gray-100">
           <h2 className="text-4xl md:text-5xl font-semibold tracking-tight-apple text-apple-text mb-8">
             Empiece su proyecto hoy.
@@ -182,8 +173,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 };
 
