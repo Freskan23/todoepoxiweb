@@ -10,25 +10,25 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-primary-600">TodoEpoxi</span>
+              <span className="text-2xl font-bold text-blue-600">TodoEpoxi</span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-primary-600 transition">
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition">
               Inicio
             </Link>
-            <Link to="/servicios" className="text-gray-700 hover:text-primary-600 transition">
+            <Link to="/servicios" className="text-gray-700 hover:text-blue-600 transition">
               Servicios
             </Link>
-            <Link to="/galeria" className="text-gray-700 hover:text-primary-600 transition">
+            <Link to="/galeria" className="text-gray-700 hover:text-blue-600 transition">
               Galería
             </Link>
-            <Link to="/precios" className="text-gray-700 hover:text-primary-600 transition">
+            <Link to="/precios" className="text-gray-700 hover:text-blue-600 transition">
               Precios
             </Link>
-            <Link to="/contacto" className="btn-primary">
+            <Link to="/contacto" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 shadow-lg hover:shadow-xl">
               Presupuesto Gratis
             </Link>
           </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -57,35 +57,35 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
             <Link
               to="/"
-              className="block px-3 py-2 text-gray-700 hover:bg-primary-50 rounded-md"
+              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               Inicio
             </Link>
             <Link
               to="/servicios"
-              className="block px-3 py-2 text-gray-700 hover:bg-primary-50 rounded-md"
+              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               Servicios
             </Link>
             <Link
               to="/galeria"
-              className="block px-3 py-2 text-gray-700 hover:bg-primary-50 rounded-md"
+              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               Galería
             </Link>
             <Link
               to="/precios"
-              className="block px-3 py-2 text-gray-700 hover:bg-primary-50 rounded-md"
+              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               Precios
             </Link>
             <Link
               to="/contacto"
-              className="block px-3 py-2 bg-primary-600 text-white rounded-md text-center"
+              className="block px-3 py-2 bg-blue-600 text-white rounded-md text-center"
               onClick={() => setIsOpen(false)}
             >
               Presupuesto Gratis

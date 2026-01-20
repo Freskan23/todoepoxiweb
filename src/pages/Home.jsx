@@ -4,22 +4,22 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white pt-24 pb-16">
-        <div className="section-container">
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white pt-24 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Pavimentos de Resina Epoxi en Toda España
               </h1>
-              <p className="text-xl mb-8 text-primary-100">
+              <p className="text-xl mb-8 text-blue-100">
                 Instalación profesional de suelos epoxi para garajes, naves industriales y espacios comerciales.
                 <span className="font-semibold"> Desde 18€/m²</span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contacto" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
+                <Link to="/contacto" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 shadow-lg hover:shadow-xl bg-white text-blue-600 hover:bg-gray-100">
                   Presupuesto Gratis 24h
                 </Link>
-                <Link to="/servicios" className="btn-secondary border-white text-white hover:bg-white/10">
+                <Link to="/servicios" className="bg-white hover:bg-gray-50 text-blue-600 font-semibold py-3 px-6 rounded-lg border-2 border-blue-600 transition duration-200 border-white text-white hover:bg-white/10">
                   Ver Servicios
                 </Link>
               </div>
@@ -74,7 +74,7 @@ const Home = () => {
       </section>
 
       {/* Servicios Section */}
-      <section className="section-container">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Nuestros Servicios
@@ -93,7 +93,7 @@ const Home = () => {
               <p className="text-gray-600 mb-4">
                 Suelos resistentes y duraderos para garajes particulares y comunitarios.
               </p>
-              <Link to="/servicios/garajes" className="text-primary-600 font-semibold hover:text-primary-700">
+              <Link to="/servicios/garajes" className="text-blue-600 font-semibold hover:text-blue-700">
                 Ver más →
               </Link>
             </div>
@@ -107,7 +107,7 @@ const Home = () => {
               <p className="text-gray-600 mb-4">
                 Soluciones para naves, almacenes y espacios de alta resistencia.
               </p>
-              <Link to="/servicios/industrial" className="text-primary-600 font-semibold hover:text-primary-700">
+              <Link to="/servicios/industrial" className="text-blue-600 font-semibold hover:text-blue-700">
                 Ver más →
               </Link>
             </div>
@@ -121,7 +121,7 @@ const Home = () => {
               <p className="text-gray-600 mb-4">
                 Diseños personalizados para locales comerciales y viviendas.
               </p>
-              <Link to="/servicios/decorativo" className="text-primary-600 font-semibold hover:text-primary-700">
+              <Link to="/servicios/decorativo" className="text-blue-600 font-semibold hover:text-blue-700">
                 Ver más →
               </Link>
             </div>
@@ -135,7 +135,7 @@ const Home = () => {
               <p className="text-gray-600 mb-4">
                 Aplicación experta con materiales de primera calidad.
               </p>
-              <Link to="/servicios" className="text-primary-600 font-semibold hover:text-primary-700">
+              <Link to="/servicios" className="text-blue-600 font-semibold hover:text-blue-700">
                 Ver más →
               </Link>
             </div>
@@ -144,7 +144,7 @@ const Home = () => {
       </section>
 
       {/* Ventajas Section */}
-      <section className="bg-gray-50 section-container">
+      <section className="bg-gray-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Ventajas del Pavimento Epoxi
@@ -153,8 +153,8 @@ const Home = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
@@ -165,8 +165,8 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -177,8 +177,8 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -191,15 +191,15 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary-600 text-white section-container">
+      <section className="bg-blue-600 text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             ¿Listo para transformar tu espacio?
           </h2>
-          <p className="text-xl mb-8 text-primary-100">
+          <p className="text-xl mb-8 text-blue-100">
             Solicita tu presupuesto gratuito y sin compromiso en menos de 24 horas
           </p>
-          <Link to="/contacto" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
+          <Link to="/contacto" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 shadow-lg hover:shadow-xl bg-white text-blue-600 hover:bg-gray-100">
             Solicitar Presupuesto Gratis
           </Link>
         </div>
