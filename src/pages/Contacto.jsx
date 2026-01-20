@@ -31,10 +31,10 @@ const Contacto = () => {
           <div className="text-center mb-16">
             <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-apple-text-secondary mb-4 block">Contacto</span>
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight-apple text-apple-text mb-6">
-              Hablemos de su proyecto.
+              Dale forma a tu visión.
             </h1>
             <p className="text-xl text-apple-text-secondary">
-              Reciba una consultoría técnica y presupuesto detallado sin compromiso.
+              Cuéntanos tu proyecto y te ayudaremos a materializarlo. Consulta gratuita sin compromiso.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const Contacto = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs font-semibold text-apple-text ml-1 uppercase tracking-wider">Email institucional</label>
+                  <label className="text-xs font-semibold text-apple-text ml-1 uppercase tracking-wider">Email de contacto</label>
                   <input
                     type="email"
                     name="email"
@@ -106,11 +106,12 @@ const Contacto = () => {
                     onChange={handleChange}
                     className="w-full bg-white px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all appearance-none"
                   >
-                    <option value="">Seleccionar categoría</option>
-                    <option value="industrial">Industrial Performance</option>
-                    <option value="garaje">Garajes & Parkings</option>
-                    <option value="decorativo">Epoxi Decorativo</option>
-                    <option value="mantenimiento">Renovación & Mante.</option>
+                    <option value="">Seleccionar servicio</option>
+                    <option value="suelos">Suelos Continuos</option>
+                    <option value="encimeras">Encimeras de Lujo</option>
+                    <option value="mesas">Mesas Río</option>
+                    <option value="arte">Arte Decorativo</option>
+                    <option value="otro">Otro Proyecto</option>
                   </select>
                 </div>
 
@@ -135,7 +136,7 @@ const Contacto = () => {
                   onChange={handleChange}
                   rows="4"
                   className="w-full bg-white px-5 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-black/5 transition-all"
-                  placeholder="Describa brevemente las necesidades técnicas de su espacio..."
+                  placeholder="Describe tu proyecto: tipo de trabajo, tamaño, colores, acabados deseados..."
                 ></textarea>
               </div>
 
@@ -155,7 +156,7 @@ const Contacto = () => {
                 type="submit"
                 className="w-full bg-apple-text text-white font-semibold py-5 rounded-2xl hover:bg-black transition-all shadow-lg hover:shadow-xl active:scale-[0.98]"
               >
-                Solicitar Consultoría Técnica
+                Solicitar Presupuesto Gratuito
               </button>
             </form>
           </div>
@@ -166,7 +167,7 @@ const Contacto = () => {
               <p className="text-lg font-semibold text-apple-text">900 123 456</p>
             </div>
             <div className="space-y-2">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-apple-text-secondary">Email Profesional</h4>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-apple-text-secondary">Email de Contacto</h4>
               <p className="text-lg font-semibold text-apple-text">hola@todoepoxi.es</p>
             </div>
             <div className="space-y-2">

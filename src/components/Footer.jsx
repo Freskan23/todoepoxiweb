@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-semibold tracking-tight text-apple-text">TodoEpoxi</h3>
             <p className="text-sm text-apple-text-secondary leading-relaxed">
-              Expertos en la instalación de pavimentos de resina epoxi de alta gama.
-              Compromiso con la excelencia y el diseño en toda España.
+              Artesanos especializados en resina epoxi: suelos continuos, encimeras personalizadas, mesas río y arte decorativo.
+              Creando belleza funcional en toda España.
             </p>
           </div>
 
@@ -20,23 +20,23 @@ const Footer = () => {
             <h4 className="text-xs font-semibold uppercase tracking-widest text-apple-text-secondary mb-6">Servicios</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/servicios/garajes" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
-                  Garajes
+                <Link to="/servicios/suelos-epoxi" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
+                  Suelos Continuos
                 </Link>
               </li>
               <li>
-                <Link to="/servicios/industrial" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
-                  Industrial
+                <Link to="/servicios/encimeras-epoxi" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
+                  Encimeras de Lujo
                 </Link>
               </li>
               <li>
-                <Link to="/servicios/decorativo" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
-                  Diseño de Interiores
+                <Link to="/servicios/mesas-resina" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
+                  Mesas Río
                 </Link>
               </li>
               <li>
-                <Link to="/servicios/parkings" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
-                  Comunidades
+                <Link to="/servicios/arte-resina" className="text-sm text-apple-text hover:text-apple-blue transition-colors">
+                  Arte Decorativo
                 </Link>
               </li>
             </ul>
