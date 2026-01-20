@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contacto from './pages/Contacto';
 import Provincia from './pages/Provincia';
+import ServicioCategoria from './pages/ServicioCategoria';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/servicios" element={<Home />} />
+            <Route path="/servicios/:category" element={<ServicioCategoria />} />
             <Route path="/galeria" element={<Home />} />
             <Route path="/precios" element={<Home />} />
             <Route path="/:slug" element={<Provincia />} />

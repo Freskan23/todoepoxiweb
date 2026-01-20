@@ -28,9 +28,17 @@ const Navbar = () => {
             <Link to="/" className="text-sm font-medium text-apple-text/80 hover:text-apple-text transition-colors">
               Inicio
             </Link>
-            <Link to="/servicios" className="text-sm font-medium text-apple-text/80 hover:text-apple-text transition-colors">
-              Servicios
-            </Link>
+            <div className="relative group">
+              <Link to="/servicios" className="text-sm font-medium text-apple-text/80 group-hover:text-apple-text transition-colors flex items-center gap-1 py-4">
+                Servicios <svg className="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+              </Link>
+              <div className="absolute top-full left-0 w-48 bg-white/95 backdrop-blur-md border border-gray-100 rounded-2xl shadow-xl py-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300">
+                <Link to="/servicios/suelos-epoxi" className="block px-4 py-2 text-xs font-medium text-apple-text/80 hover:bg-apple-bg hover:text-apple-blue">Suelos</Link>
+                <Link to="/servicios/encimeras-epoxi" className="block px-4 py-2 text-xs font-medium text-apple-text/80 hover:bg-apple-bg hover:text-apple-blue">Encimeras</Link>
+                <Link to="/servicios/mesas-resina" className="block px-4 py-2 text-xs font-medium text-apple-text/80 hover:bg-apple-bg hover:text-apple-blue">Mesas de Diseño</Link>
+                <Link to="/servicios/arte-resina" className="block px-4 py-2 text-xs font-medium text-apple-text/80 hover:bg-apple-bg hover:text-apple-blue">Arte & Cuadros</Link>
+              </div>
+            </div>
             <Link to="/galeria" className="text-sm font-medium text-apple-text/80 hover:text-apple-text transition-colors">
               Galería
             </Link>
@@ -73,13 +81,17 @@ const Navbar = () => {
           >
             Inicio
           </Link>
-          <Link
-            to="/servicios"
-            className="block text-2xl font-semibold text-apple-text"
-            onClick={() => setIsOpen(false)}
-          >
-            Servicios
-          </Link>
+          <div className="space-y-4">
+            <Link to="/servicios" className="block text-2xl font-semibold text-apple-text" onClick={() => setIsOpen(false)}>
+              Servicios
+            </Link>
+            <div className="pl-4 space-y-2">
+              <Link to="/servicios/suelos-epoxi" className="block text-lg text-apple-text-secondary" onClick={() => setIsOpen(false)}>Suelos</Link>
+              <Link to="/servicios/encimeras-epoxi" className="block text-lg text-apple-text-secondary" onClick={() => setIsOpen(false)}>Encimeras</Link>
+              <Link to="/servicios/mesas-resina" className="block text-lg text-apple-text-secondary" onClick={() => setIsOpen(false)}>Mesas</Link>
+              <Link to="/servicios/arte-resina" className="block text-lg text-apple-text-secondary" onClick={() => setIsOpen(false)}>Arte</Link>
+            </div>
+          </div>
           <Link
             to="/galeria"
             className="block text-2xl font-semibold text-apple-text"

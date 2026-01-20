@@ -58,60 +58,61 @@ const Home = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          {/* Main Service - Industrial */}
+          {/* Suelos - Hero style */}
           <div className="md:col-span-8 group relative bg-apple-bg rounded-3xl overflow-hidden min-h-[500px] transition-all duration-500 hover:shadow-2xl">
             <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
-              <img src="/images/industrial.png" alt="Industrial" className="w-full h-full object-cover" />
+              <img src="/images/servicios/suelos-hero.png" alt="Suelos de Resina Epoxi" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             </div>
             <div className="absolute bottom-10 left-10 text-white">
-              <span className="text-[10px] uppercase tracking-widest font-bold opacity-80 mb-2 block">Premium Performance</span>
-              <h3 className="text-3xl font-semibold mb-4">Pavimentos Industriales</h3>
+              <span className="text-[10px] uppercase tracking-widest font-bold opacity-80 mb-2 block">Premium Flooring</span>
+              <h3 className="text-3xl font-semibold mb-4">Pavimentos Continuos</h3>
               <p className="max-w-sm text-white/80 text-sm leading-relaxed mb-6">
-                Sistemas multicapa diseñados para naves de logística y alta producción.
+                Suelos sin juntas, ultra-resistentes y con acabados artísticos personalizados.
               </p>
-              <Link to="/servicios/industrial" className="bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-2 rounded-full text-sm inline-block hover:bg-white hover:text-black transition-all">
-                Detalles técnicos
+              <Link to="/servicios/suelos-epoxi" className="bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-2 rounded-full text-sm inline-block hover:bg-white hover:text-black transition-all">
+                Ver Portfolio
               </Link>
             </div>
           </div>
 
-          {/* Side Service - Garajes */}
+          {/* Encimeras */}
           <div className="md:col-span-4 group relative bg-white border border-gray-100 rounded-3xl overflow-hidden min-h-[500px] transition-all duration-500 hover:shadow-2xl">
             <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
-              <img src="/images/garajes.png" alt="Garajes" className="w-full h-full object-cover opacity-90" />
+              <img src="/images/servicios/encimeras-hero.png" alt="Encimeras Epoxi" className="w-full h-full object-cover opacity-90" />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent"></div>
             </div>
             <div className="absolute bottom-10 left-10 text-white">
-              <h3 className="text-2xl font-semibold mb-2">Parkings de Lujo</h3>
-              <Link to="/servicios/garajes" className="text-sm font-medium underline underline-offset-4">Ver serie doméstica</Link>
+              <h3 className="text-2xl font-semibold mb-2">Encimeras de Lujo</h3>
+              <Link to="/servicios/encimeras-epoxi" className="text-sm font-medium underline underline-offset-4">Efecto mármol y piedra</Link>
             </div>
           </div>
 
-          {/* Bottom Row */}
-          <div className="md:col-span-4 group relative bg-apple-bg rounded-3xl overflow-hidden min-h-[300px] transition-all duration-500">
-            <div className="p-10">
-              <h3 className="text-xl font-semibold text-apple-text mb-4">Garantía Certificada</h3>
-              <p className="text-apple-text-secondary text-sm leading-relaxed mb-6">
-                10 años de cobertura total en adherencia y color. Materiales certificados por la UE.
-              </p>
-              <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center">
-                <svg className="w-6 h-6 text-apple-text" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-              </div>
+          {/* Mesas */}
+          <div className="md:col-span-6 group relative bg-apple-bg rounded-3xl overflow-hidden min-h-[400px] transition-all duration-500 hover:shadow-2xl">
+            <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
+              <img src="/images/servicios/mesas-hero.png" alt="Mesas de Resina" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            </div>
+            <div className="absolute bottom-10 left-10 text-white">
+              <h3 className="text-2xl font-semibold mb-2">Mobiliario de Autor</h3>
+              <p className="max-w-xs text-white/80 text-sm mb-4">Mesas río de madera noble y resina cristalina.</p>
+              <Link to="/servicios/mesas-resina" className="text-sm font-medium underline underline-offset-4">Explorar piezas únicas</Link>
             </div>
           </div>
 
-          <div className="md:col-span-8 group relative bg-black rounded-3xl overflow-hidden min-h-[300px] transition-all duration-500">
-            <div className="absolute right-0 top-0 w-1/2 h-full opacity-40">
-              <img src="/images/decorativo.png" alt="Decorativo" className="w-full h-full object-cover" />
+          {/* Arte */}
+          <div className="md:col-span-6 group relative bg-black rounded-3xl overflow-hidden min-h-[400px] transition-all duration-500">
+            <div className="absolute inset-0 opacity-60 transition-transform duration-700 group-hover:scale-105">
+              <img src="/images/servicios/arte-hero.png" alt="Arte en Resina" className="w-full h-full object-cover" />
             </div>
-            <div className="relative z-10 p-10 max-w-md">
-              <h3 className="text-2xl font-semibold text-white mb-4">Diseño Interior</h3>
+            <div className="relative z-10 p-10 h-full flex flex-col justify-end">
+              <h3 className="text-2xl font-semibold text-white mb-2">Arte y Decoración</h3>
               <p className="text-white/60 text-sm leading-relaxed mb-6">
-                Minimalismo sin juntas. La elección predilecta para lofts modernos y espacios comerciales de diseño.
+                Cuadros abstractos y geodas de gran formato con profundidad real.
               </p>
-              <Link to="/servicios/decorativo" className="text-white font-medium flex items-center gap-2">
-                Ver portafolio <span className="text-lg">→</span>
+              <Link to="/servicios/arte-resina" className="text-white font-medium flex items-center gap-2">
+                Ver galería de arte <span className="text-lg">→</span>
               </Link>
             </div>
           </div>
